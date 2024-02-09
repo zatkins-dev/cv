@@ -1,0 +1,298 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{burgundy}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage[T1]{fontenc}
+\usepackage[polish,english]{babel}
+\addto{\captionsenglish}{\renewcommand{\refname}{Publications and Talks}}
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+% \usepackage{hyperref}
+% adjust the page margins
+\usepackage[scale=.9]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Zachary}{Atkins}
+% \title{Resumé}                               % optional, remove / comment the line if not wanted
+\address{Boulder, CO}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~913/704-9298}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{zach.atkins@colorado.edu}                               % optional, remove / comment the line if not wanted
+% \email{zacharyjayhawk@gmail.com}                               % optional, remove / comment the line if not wanted
+% \homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+% \social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
+% \social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
+% \social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+\social[github]{zatkins-dev}                              % optional, remove / comment the line if not wanted
+% \social[stackoverflow]{0000000/johndoe}            % optional, remove / comment the line if not wanted
+% \social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
+\social[orcid]{0000-0002-2491-0725}                  % optional, remove / comment the line if not wanted
+% \social[researchgate]{jdoe}                        % optional, remove / comment the line if not wanted
+% \social[researcherid]{jdoe}                        % optional, remove / comment the line if not wanted
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+% \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustments (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+  % to redefine the bibliography heading string ("Publications")
+\renewcommand{\refname}{Publications and Talks}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2022--Present}{Computer Science, PhD Student}{University of Colorado, Boulder}{Boulder, CO}{}{
+  Coursework centering on numerical methods and high-performance scientific computing.\newline{}
+  \textbf{GPA:} 4.0\newline{}
+  \textbf{Research experience:}
+  \begin{itemize}
+    \item Implemented Nitsche's method for modeling contact between elastic and rigid solid bodies in PSAAP-sponsored Ratel code;
+    \item Developed entropy variable implementation of Navier-Stokes fluid dynamics in PSAAP-sponsored libCEED code;
+  \end{itemize}
+}
+\cventry{2016--2021}{Mathematics, BS with Honors}{University of Kansas}{Lawrence, KS}{}{
+  Comprehensive background in algebra, analysis, and numerical mathematics.
+  Electives in graduate level numerical partial differential equations and numerical analysis,
+  including domain decomposition methods for partial differential equations, and real analysis.\newline{}
+  \textbf{GPA:} 4.0 in major, 4.0 overall\newline{}
+  \textbf{Research experience:}
+  \begin{itemize}
+    \item Honors project on the application of decentralized optimization methods to edge devices;
+    \item Received university undergraduate research award for domain decomposition methods for eigenvalue problems;
+  \end{itemize}
+}
+\cventry{2016--2021}{Computer Science, BS}{University of Kansas}{Lawrence, KS}{}{
+  Comprehensive background in data structures, algorithms, and computing theory.
+  Electives in artificial intelligence and computer graphics, as well as cross-major electives in numerical analysis.\newline{}
+  \textbf{GPA:} 4.0 in major, 4.0 overall\newline{}
+  \textbf{Project Experience:}
+  \begin{itemize}
+    \item Video game and graphics development using Unity, PyGame, and OpenGL
+    \item Reinforcement learning with OpenAI using Python
+    \item C and C++ projects including functioning compiler and basic linux shell
+  \end{itemize}
+}  % arguments 3 to 6 can be left empty
+
+\section{Experience}
+\subsection{Academic and Research}
+\cventry{2023-Present}{Graduate Research Assistant}{University of Colorado Boulder}{Boulder, CO}{}{
+  Contributed to highly-performant, high-order and matrix-free solid mechanics code Ratel under the auspices of the Predictive Science Academic Alliance Program (PSAAP).
+  \begin{itemize}%
+    \item Implemented elastic-rigid contact via Nitsche's method and penalty method;
+    \item Currently developing implicit, full Lagrangian material point method solver for simulation of granular materials.
+  \end{itemize}
+  \textbf{Contact:} Jed Brown, Associate Professor, jed.brown@colorado.edu
+}
+\cventry{Fall 2022}{Graduate Teaching Assistant}{University of Colorado Boulder}{Boulder, CO}{}{
+  Designed assignments aligning with curriculum and taught introductory programming in C++.
+  \begin{itemize}%
+    \item Led two recitation sections weekly consisting of over 70 students;
+    \item Facilitated over 30 cumulative hours of interview grading;
+    \item Created design documentation and rubrics for final class project, a text-based video game.
+  \end{itemize}
+  \textbf{Contact:} Tom Yeh, Associate Professor, tom.yeh@colorado.edu
+}
+\cventry{2021--2022}{Academic Graduate Appointee}{Lawrence Livermore National Laboratory}{Livermore, CA}{}{
+  Applied mathematical and computing principles to power system resilience through collaborative autonomy.
+  \begin{itemize}%
+    \item Collaborated with internal and external project contributors;
+    \item Led development of a wmoderately-sized software library to facilitate communication between grid devices;
+    \item Augmented existing numerical methods with robustness to communication delays and bad data.
+  \end{itemize}
+  \textbf{Contact:} Alyson Fox, Project Leader, fox33@llnl.gov
+}
+\cventry{Summer 2020, Spring 2021}{Computing Intern}{Lawrence Livermore National Laboratory}{Livermore, CA}{}{
+  Developed and analyzed algorithms for decentralized optimization in unreliable and communication-limited environments.
+  \begin{itemize}%
+    \item Principal author of internal technical report over studied algorithms;
+    \item Participated in Cybersecurity and Infrastructure Resilience competition:
+          \begin{itemize}%
+            \item Consisted of seven weekly cybersecurity and mathematics capture-the-flag challenges;
+            \item Placed first overall with all challenges completed;
+          \end{itemize}
+    \item Developed a comprehensive algorithm test suite using Python
+  \end{itemize}
+  \textbf{Contact:} Chris Vogl, Project Mentor, vogl2@llnl.gov
+}
+\cventry{2020--2021}{Undergraduate Research Assistant}{University of Kansas}{Lawrence, KS}{}{
+  Researched optimal optimal methods of domain decomposition for eigenvalue problems, particularly spectral Schur complement
+  techniques. Continued research on decentralized optimization in collaboration with LLNL.
+  \begin{itemize}%
+    \item Received Mathematics departmental undergraduate research award;
+    \item Presented early results on domain decomposition for eigenvalue problems at 2020 Undergraduate Research Day at the Capitol;
+    \item Presented at 2021 SIAM Conference on Computational Science and Engineering over:\newline{} \textit{Using Decentralized Learning to Reduce Communication in Column-Partitioned, Multi-Agent Systems};
+  \end{itemize}
+  \textbf{Contact:} \foreignlanguage{polish}{Agnieszka Międlar}, Associate Professor, amiedlar@vt.edu
+}
+\cventry{Spring 2020}{CTE Investigation Module Designer}{University of Kansas}{Lawrence, KS}{}{
+  Advised curriculum and wrote programming projects for cross-discipline, upper-level undergraduate
+  cryptographic methods class.
+  \begin{itemize}%
+    \item Developed four python programming projects, including a simple RSA encryption implementation;
+    \item Assisted students through office hours and supplementary materials;
+  \end{itemize}
+  \textbf{Contact:} Emily Witt, Associate Professor, witt@ku.edu
+}
+\subsection{Software Engineering}
+\cventry{Fall 2019}{Integrations Engineer}{DEG Digital}{Olathe, KS}{}{
+  \begin{itemize}%
+    \item Developed web API integrations with Salesforce Service Cloud triggers;
+    \item Prototyped and developed AWS lambda functions for data-processing workflows;
+  \end{itemize}
+  \textbf{Contact:} Nick Aranzamendi, Engineering Manager, nickaranz@gmail.com
+}
+\cventry{Summmer 2017--2019}{Integrations Intern}{DEG Digital}{Olathe, KS}{}{
+  \begin{itemize}%
+    \item Developed Slack bot for automation of internal tasks;
+    \item Prototyped quality assurance automation using Selenium WebDriver;
+  \end{itemize}
+  \textbf{Contact:} Greg Bustamente, Director of Engineering, gbustamante@degdigital.com
+}
+\subsection{Miscellaneous}
+\cventry{2016--2021}{Assistant Debate Coach}{Lansing High School}{Lansing, KS}{}{
+  Instructed high school students on communication, argument construction, and
+  strategic decision-making. Adjudicated debates over topics including immigration restrictions, reduction of US arms sales, and criminal-justice reform.
+  \begin{itemize}
+    \item Coached two NSDA Nationals top-speakers in World Schools Debate, as well as four teams placing 17th place or higher;
+    \item Coached multiple national qualifying teams in policy debate;
+  \end{itemize}
+  \textbf{Contact:} Larissa Maranell, Head Debate Coach, larissa.maranell@usd469.net
+}
+
+\section{Leadership}
+\cventry{2017--2021}{Officer}{KU Math Club}{}{}{
+  \begin{itemize}
+    \item Vice President, Fall 2020 -- Present
+    \item Web and Social Media Chair, Fall 2017 -- Fall 2020
+    \item Created club website and managed social media pages
+    \item Prepared meetings and coordinated with guest speakers
+  \end{itemize}
+}
+\cventry{2014}{Eagle Scout}{Boy Scouts Troop 165}{Lansing, KS}{}{
+  \begin{itemize}
+    \item Served in various leadership roles
+    \item Organized community service project restoring
+          a local park
+  \end{itemize}
+}
+
+\section{Academic Honors}
+\cvlistitem{Graduated with Highest Distinction in Mathematics and Computer Science}
+\cvlistitem{Undergraduate Research Award in Mathematics, Spring 2020}
+\cvlistitem{Phi Kappa Phi Honors Society, Member, inducted 2018}
+\cvlistitem{Upsilon Pi Epsilon Computer Science Honors Society, Member, inducted 2020}
+\cvlistitem{Tau Beta Pi Engineering Honors Society, Member, inducted 2020}
+\cvlistitem{University Honor Roll, Fall 2016 -- Spring 2021}
+\cvlistitem{University of Kansas Chancellor's Scholarship, 2016 -- 2021}
+\cvlistitem{Babcock-Srinivasan Mathematics Scholarship, 2020}
+\cvlistitem{Garmin Excellence Scholarship, 2017}
+\cvlistitem{National Speech and Debate Association (NSDA), Member of Premier Distinction}
+
+\pagebreak
+\section{Programming Languages}
+\cventry{}{Python 3}{Advanced}{}{}{
+  Extensive experience in scientific computing using packages such as \texttt{numpy}, \texttt{scikit-learn}, \texttt{pandas} and \texttt{matplotlib}.
+  Additional experience in algorithm design and parallel programming with \texttt{multiprocessing} and \texttt{mpi4py}.
+  Experience in user interaction and display management, both in a GUI using \texttt{Pygame} and in the command line, using \texttt{argparse}, \texttt{click}, and others.
+  Strong understanding of design principles and best practices, including use of dataclasses and abstract base classes.
+}
+\cventry{}{C++}{Advanced}{}{}{
+  Experience in designing data structures, OpenGL, and systems programming using modern C++17 features.
+  Strong understanding of object-oriented programming, data structures, and algorithms.
+}
+\cventry{}{C}{Intermediate}{}{}{
+  Experience developing PETSc-based finite element solvers in the context of computational solid mechanics.
+  Experience in socket programming, including UDP and TCP, used to create a file transfer program, HTTP web server, and HTTP web proxy.
+}
+\cventry{}{C\#}{Intermediate}{}{}{Moderate experience in .NET framework and Unity.}
+
+% \section{Publications and Talks}
+% \cvlistitem{\textit{Resilient s-ACD for Asynchronous Collaborative Solutions of Systems of Linear Equations} (\href{http://dx.doi.org/10.15439/2023F8932}{doi:10.15439/2023f8932}), Annals of Computer Science and Information Systems, Volume 35}
+% \cvlistitem{\textit{Distribution System Voltage Prediction from Smart Inverters using Decentralized Regression} (\href{https://www.osti.gov/biblio/1811216}{OSTI:1811216}), IEEE Power Energy Society General Meeting}
+% \cvlistitem{\textit{Using Decentralized Learning to Reduce Communication in Column-Partitioned, Multi-Agent Systems}, SIAM CSE21 Minisymposium}
+% \section{Computer skills}
+% \cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+% \cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+% \cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+
+
+% \section{Extra 2}
+% \cvlistdoubleitem{Item 1}{Item 4}
+% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+% \section{References}
+% \begin{cvcolumns}
+%   \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%   \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%   \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+% \end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{references}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+% \clearpage
+% %-----       letter       ---------------------------------------------------------
+% % recipient data
+% \recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+% \date{January 01, 1984}
+% \opening{Dear Sir or Madam,}
+% \closing{Yours faithfully,}
+% \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+% \makelettertitle
+
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+% Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+% Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+% Albert Einstein discovered that $e=mc^2$ in 1905.
+
+% \[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+% \makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
