@@ -73,6 +73,9 @@
   \begin{itemize}
     \item Implemented Nitsche's method for modeling contact between elastic and rigid solid bodies in PSAAP-sponsored Ratel code;
     \item Developed entropy variable implementation of Navier-Stokes fluid dynamics in PSAAP-sponsored libCEED code;
+    \item Contributed arc-length continuation solver to PETSc, a high-performance, scalable library for numerical PDEs;
+    \item Developed implicit, updated Lagrangian material point method solver for hyperelastic materials in Ratel;
+    \item Created ChordDyn, a Tonnetz-based chord progression generator using chaotic dynamics in Julia;
   \end{itemize}
 }
 \cventry{2016--2021}{Mathematics, BS with Honors}{University of Kansas}{Lawrence, KS}{}{
@@ -104,7 +107,7 @@
   Contributed to highly-performant, high-order and matrix-free solid mechanics code Ratel under the auspices of the Predictive Science Academic Alliance Program (PSAAP).
   \begin{itemize}%
     \item Implemented elastic-rigid contact via Nitsche's method and penalty method;
-    \item Currently developing implicit, full Lagrangian material point method solver for simulation of granular materials.
+    \item Currently developing implicit, previous Lagrangian material point method solver for simulation of granular materials.
   \end{itemize}
   \textbf{Contact:} Jed Brown, Associate Professor, jed.brown@colorado.edu
 }
@@ -202,6 +205,9 @@
 }
 
 \section{Academic Honors}
+\cvlistitem{Best Poster Award, Work-in-Progress, CU Boulder Computer Science Annual Research Expo 2024}
+\cvlistitem{Best Poster Award, Second Place, Dynamics Days 2024}
+\cvlistitem{Clive Baillie Memorial Scholarship, Spring 2024}
 \cvlistitem{Graduated with Highest Distinction in Mathematics and Computer Science}
 \cvlistitem{Undergraduate Research Award in Mathematics, Spring 2020}
 \cvlistitem{Phi Kappa Phi Honors Society, Member, inducted 2018}
@@ -221,13 +227,20 @@
   Experience in user interaction and display management, both in a GUI using \texttt{Pygame} and in the command line, using \texttt{argparse}, \texttt{click}, and others.
   Strong understanding of design principles and best practices, including use of dataclasses and abstract base classes.
 }
+\cventry{}{C}{Advanced}{}{}{
+  Strong experience developing PETSc-based finite element solvers in the context of computational solid mechanics.
+  Contributed to libCEED, a high-performance, matrix-free finite element library, and Ratel, a solid mechanics code leveraging libCEED and PETSc.
+  Experience in socket programming, including UDP and TCP, used to create a file transfer program, HTTP web server, and HTTP web proxy.
+}
 \cventry{}{C++}{Advanced}{}{}{
   Experience in designing data structures, OpenGL, and systems programming using modern C++17 features.
+  Contributed to Serac, an MFEM-based finite element code for solid mechanics and thermodynamics.
   Strong understanding of object-oriented programming, data structures, and algorithms.
 }
-\cventry{}{C}{Intermediate}{}{}{
-  Experience developing PETSc-based finite element solvers in the context of computational solid mechanics.
-  Experience in socket programming, including UDP and TCP, used to create a file transfer program, HTTP web server, and HTTP web proxy.
+\cventry{}{Julia}{Intermediate}{}{}{
+  Experience in scientific computing, including development of a chord progression generator using chaotic dynamics.
+  Implemented implicit and explicit time-integration schemes for the evolution and analysis of chaotic systems.
+  Implemented a 1D finite element solver for small-deformation elasticity.
 }
 \cventry{}{C\#}{Intermediate}{}{}{Moderate experience in .NET framework and Unity.}
 

@@ -7,7 +7,7 @@
   issn      = {2300-5963},
   url       = {https://annals-csis.org/proceedings/2023/drp/8932.html},
   booktitle = {Annals of Computer Science and Information Systems},
-  author    = {Erlandson, Lucas and Atkins, Zachary and Fox, Alyson and Vogl, Christopher and Miedlar, Agnieszka and Ponce, Colin},
+  author    = {Erlandson, Lucas and Atkins, Zachary and Fox, Alyson and Vogl, Christopher and Mi\k{e}dlar, Agnieszka and Ponce, Colin},
   year      = {2023},
   pages     = {441-450},
   language  = {en}
@@ -15,14 +15,28 @@
 
 @article{osti_1811216,
   title   = {Distribution System Voltage Prediction from Smart Inverters using Decentralized Regression},
-  author  = {Atkins, Zachary R and Vogl, Christopher J and Madduri, Achintya and Duan, Nan and Międlar, Agnieszka K and Merl, Daniel},
+  author  = {Atkins, Zachary R and Vogl, Christopher J and Madduri, Achintya and Duan, Nan and Mi\k{e}dlar, Agnieszka K and Merl, Daniel},
   doi     = {10.1109/PESGM46819.2021.9637900},
   url     = {https://www.osti.gov/biblio/1811216},
   journal = {2021 IEEE Power \& Energy Society General Meeting (PESGM)},
   place   = {United States},
   year    = {2021},
   month   = jul
-} 
+}
+
+@article{doi:10.1137/23M1605648,
+  author   = {Vogl, Christopher J. and Atkins, Zachary R. and Fox, Alyson and Mi\k{e}dlar, Agnieszka and Ponce, Colin},
+  title    = {Modifying the Asynchronous Jacobi Method for Data Corruption Resilience},
+  journal  = {SIAM Journal on Scientific Computing},
+  volume   = {46},
+  number   = {5},
+  pages    = {A3258-A3281},
+  year     = {2024},
+  doi      = {10.1137/23M1605648},
+  url      = {https://doi.org/10.1137/23M1605648},
+  eprint   = {https://doi.org/10.1137/23M1605648},
+  abstract = { Abstract. Moving scientific computation from high-performance computing (HPC) and cloud computing (CC) environments to devices on the edge, i.e., physically near instruments of interest, has received tremendous interest in recent years. Such edge computing environments can operate on data in situ, offering enticing benefits over data aggregation to HPC and CC facilities that include avoiding costs of transmission, increased data privacy, and real-time data analysis. Because of the inherent unreliability of edge computing environments, new fault-tolerant approaches must be developed before the benefits of edge computing can be realized. Motivated by algorithm-based fault tolerance, a variant of the asynchronous Jacobi (ASJ) method is developed that achieves resilience to data corruption by rejecting solution approximations from neighbor devices according to a bound derived from convergence theory. Numerical results on a two-dimensional Poisson problem show that the new rejection criterion, along with a novel approximation to the shortest path length on which the criterion depends, restores convergence for the ASJ variant in the presence of certain types data corruption. Numerical results are obtained for when the singular values in the analytic bound are approximated. Additional linear systems are also explored, one with a more dense sparsity pattern and one that includes advection. All results indicate that successful resilience to data corruption depends on whether the bound tightens fast enough to reject corrupted data before the iteration evolution deviates significantly from that predicted by the convergence theory defining the bound. This observation generalizes to future work on algorithm-based fault tolerance for other asynchronous algorithms, including upcoming approaches that leverage Krylov subspaces. }
+}
 
 @unpublished{Talk_SIAMCSE21,
   title  = {Using Decentralized Learning to Reduce Communication in Column-Partitioned, Multi-Agent Systems},
@@ -35,9 +49,18 @@
 
 @unpublished{Talk_CM22,
   title  = {The Algorithmic Development of a Fully Asynchronous Conjugate Gradient Method},
-  author = {Atkins, Zachary and Fox, Alyson and Międlar, Agnieszka and Ponce, Colin and Vogl, Christopher},
+  author = {Atkins, Zachary and Fox, Alyson and Mi\k{e}dlar, Agnieszka and Ponce, Colin and Vogl, Christopher},
   year   = {2022},
   month  = apr,
   note   = {Talk at \textit{17th Copper Mountain Conference on Iterative Methods}},
   url    = {https://easychair.org/smart-program/CM2022/2022-04-04.html#talk:187908}
+}
+
+@unpublished{Talk_CSS24,
+  title  = {Addressing Numerical Challenges in Frictional Contact Simulation for Finite-Deformation Solid Mechanics},
+  author = {Atkins, Zachary},
+  year   = {2024},
+  month  = oct,
+  note   = {Talk at \textit{9th SIAM Central States Section Annual Meeting}},
+  url    = {https://sse.umkc.edu/siam-2024/}
 }
